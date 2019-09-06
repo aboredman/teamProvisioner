@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "id": "b7515540-ce7f-11e9-b5a2-95d1b2f0a999",
+  "version": "0.0.2",
+  "packageName": "teamprovisioner",
+  "developer": {
+    "name": "Nitront",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "TeamProvisioner.Web",
+    "full": "TeamProvisioner.Web"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+  ],
+  "staticTabs": [
+    {
+      "entityId": "approve",
+      "name": "Approval",
+      "contentUrl": "https://{{HOSTNAME}}/teamProvisionerTab/approve.html",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "request",
+      "name": "Request",
+      "contentUrl": "https://{{HOSTNAME}}/teamProvisionerTab/index.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ]
+}
